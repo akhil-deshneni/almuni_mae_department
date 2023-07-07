@@ -46,8 +46,6 @@ INSTALLED_APPS = [
     "comments.apps.CommentsConfig",
     "alumni.apps.AlumniConfig",
     "student.apps.StudentConfig",
-   
-   
 ]
 
 MIDDLEWARE = [
@@ -89,12 +87,8 @@ WSGI_APPLICATION = "api.wsgi.application"
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'AlumniConnect',
-        'USER':'root',
-        'PASSWORD':'Vignesh@9909',
-        'HOST':'localhost',
-        'PORT':'3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 

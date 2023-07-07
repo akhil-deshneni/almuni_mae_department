@@ -5,7 +5,7 @@ def parse_query(query):
 
     field_values = [f.name for f in Student._meta.get_fields()]
     field_keys = ['USN', 'SAP', 'userid',
-                  'Name', 'Phone', 'Email', 'RVEmail', 'Branch', 'joined']
+                  'Name', 'Phone', 'Email', 'CSULBEmail', 'Branch', 'joined']
     d = dict(zip(field_keys, field_values))
 
     cdict = {'after': 'gt', 'before': 'lt',

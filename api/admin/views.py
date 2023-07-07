@@ -79,7 +79,6 @@ class EventDeleteView(DeleteView):
     def get_success_url(self):
         return reverse('list_event')    
 
-  
 
 def Event_list(request):
     if'q'in request.GET:

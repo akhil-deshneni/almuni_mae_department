@@ -8,7 +8,7 @@ class Student(models.Model):
     usn = models.CharField(max_length=10)
     
     user = models.OneToOneField(User, on_delete = models.CASCADE)
-    name = models.CharField(max_length=50,validators=[RegexValidator('[+-/%@$^&*()!:;]',inverse_match=True)])
+    name = models.CharField(max_length=50)
     phone = models.CharField(max_length=10)
     email = models.CharField(max_length=100, unique = True)
     rv_email = models.CharField(max_length=100, unique = True)
